@@ -1,0 +1,13 @@
+.simulatePage {
+  height: 100vh;
+  animation: simulate-animation 800s;
+}
+
+@keyframes simulate-animation {
+  from {
+    background-color: aqua;
+  }
+  to {
+    background-color: aquamarine;
+  }
+}
