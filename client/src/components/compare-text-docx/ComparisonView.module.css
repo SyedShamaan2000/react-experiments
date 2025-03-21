@@ -1,0 +1,81 @@
+.comparisonContainer {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.panelHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.panelHeader h3 {
+  margin: 0;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 500px;
+}
+
+.panel {
+  padding: 12px;
+  overflow: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  border-right: 1px solid #ddd;
+}
+
+.panel:last-child {
+  border-right: none;
+}
+
+.placeholder {
+  color: #999;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.added {
+  background-color: #e6ffed;
+  color: #22863a;
+}
+
+.removed {
+  background-color: #ffeef0;
+  color: #cb2431;
+}
+
+@media (max-width: 768px) {
+  .panels {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .panel {
+    height: 300px;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .panel:last-child {
+    border-bottom: none;
+  }
+
+  .panelHeader {
+    grid-template-columns: 1fr;
+  }
+
+  .panelHeader h3:last-child {
+    border-top: 1px solid #ddd;
+  }
+}
