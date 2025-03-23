@@ -1,0 +1,239 @@
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.sidebar {
+  width: 40%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e0e0e0;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.chatHeader {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+}
+
+.chatHeader h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #f9f9f9;
+}
+
+.message {
+  padding: 12px 16px;
+  border-radius: 12px;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.assistantMessage {
+  align-self: flex-start;
+  background-color: #e9e9eb;
+  color: #333;
+  border-bottom-left-radius: 4px;
+}
+
+.inputContainer {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.sendButton {
+  margin-left: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: #0056b3;
+}
+
+.actionButtons {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.actionButton {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.actionButton:hover {
+  background-color: #f5f5f5;
+  border-color: #bbb;
+}
+
+.documentViewer {
+  flex: 1;
+  padding: 24px 32px;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.documentViewer h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 16px;
+}
+
+.sectionList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.sectionItem {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #4a86e8;
+  font-weight: 500;
+}
+
+.sectionItem:hover {
+  background-color: #f5f9ff;
+}
+
+.activeSection {
+  background-color: #e8f2ff;
+  font-weight: bold;
+}
+
+.sectionContent {
+  background-color: white;
+}
+
+.sectionContent h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.contentText {
+  line-height: 1.6;
+  color: #444;
+}
+
+.contentText p {
+  margin-bottom: 16px;
+}
+
+.diffView {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.diffPanel {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.diffPanel h3 {
+  margin: 0;
+  padding: 12px 16px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+}
+
+.diffContent {
+  padding: 16px;
+  line-height: 1.6;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.added {
+  background-color: #e6ffed;
+  color: #22863a;
+  font-weight: 500;
+}
+
+.removed {
+  background-color: #ffeef0;
+  color: #cb2431;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.closeButton {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: #e8e8e8;
+}

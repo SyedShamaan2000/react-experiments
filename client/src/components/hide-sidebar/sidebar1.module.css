@@ -1,0 +1,27 @@
+.sidebarContainer {
+  width: 20%;
+  background-color: aqua;
+  height: 100vh;
+}
+
+.sidebarItem {
+  /* padding: 20px; */
+  width: 100%;
+  border: 2px solid aliceblue;
+  text-align: center;
+}
+
+.sidebarItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 10px;
+  /* margin-left: 10px; */
+}
+
+.closed {
+  background-color: aquamarine;
+  width: fit-content;
+}

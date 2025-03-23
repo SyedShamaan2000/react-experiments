@@ -1,0 +1,54 @@
+.analysisPanel {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.metricContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.metric {
+  flex: 1;
+  min-width: 200px;
+}
+
+.metric h4 {
+  margin: 0 0 10px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.counts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.diff {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+@media (max-width: 768px) {
+  .metricContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .metric {
+    width: 100%;
+  }
+}
