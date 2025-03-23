@@ -1,0 +1,7 @@
+.navItem2Page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: saddlebrown;
+    font-size: 150px;
+}

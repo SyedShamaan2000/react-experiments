@@ -1,0 +1,22 @@
+.container {
+    height: 10vh;
+    background-color: bisque;
+}
+
+.titlePage {
+    height: 90vh;
+    background-color: blueviolet;
+}
+
+.navItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.navItem1,
+.navItem2 {
+    cursor: pointer;
+    border: 5px solid aliceblue;
+}
