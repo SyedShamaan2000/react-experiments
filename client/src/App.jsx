@@ -4,6 +4,7 @@ import MainCssApp from "./components/css-experiment/MainCssApp";
 import MainNav from "./components/toggle-navbar-component/MainNav";
 import PropsStateArchitectureDemo from "./components/react-props-state-architecture-demo/PropsStateArchitectureDemo";
 import ReactPerformanceDashboardDemo from "./components/react-props-state-architecture-demo/ReactPerformanceDashboardDemo";
+import ControlledUncontrolledInputDemo from "./components/react-props-state-architecture-demo/ControlledUncontrolledInputDemo";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <MainCssApp /> */}
       {/* <MainNav /> */}
       {/* <PropsStateArchitectureDemo /> */}
-      <ReactPerformanceDashboardDemo />
+      {/* <ReactPerformanceDashboardDemo /> */}
+      <ControlledUncontrolledInputDemo />
     </>
   );
 }
