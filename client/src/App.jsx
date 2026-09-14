@@ -5,6 +5,7 @@ import MainNav from "./components/toggle-navbar-component/MainNav";
 import PropsStateArchitectureDemo from "./components/react-props-state-architecture-demo/PropsStateArchitectureDemo";
 import ReactPerformanceDashboardDemo from "./components/react-props-state-architecture-demo/ReactPerformanceDashboardDemo";
 import ControlledUncontrolledInputDemo from "./components/react-props-state-architecture-demo/ControlledUncontrolledInputDemo";
+import UseTransitionDemo from "./components/react-props-state-architecture-demo/UseTransitionDemo";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <MainNav /> */}
       {/* <PropsStateArchitectureDemo /> */}
       {/* <ReactPerformanceDashboardDemo /> */}
-      <ControlledUncontrolledInputDemo />
+      {/* <ControlledUncontrolledInputDemo /> */}
+      <UseTransitionDemo />
     </>
   );
 }
